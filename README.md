@@ -7,3 +7,6 @@
 
 
  I use this webpack setting for my production.
+
+
+heroku create app-react-mvp --buildpack https://github.com/mars/create-react-app-buildpack.git
