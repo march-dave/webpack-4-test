@@ -110,3 +110,7 @@ plugin: [
         name: 'vendor'
     })
 ]
+
+
+path.resolve(...) 는 상대 경로를 절대 경로로 변경해 준다.
+__dirname 는 현재 경로를 보여 준다 i.e) /TempTest/webpack-4-quickstart
