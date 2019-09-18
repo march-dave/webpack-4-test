@@ -85,3 +85,28 @@ table._fhidhfkkkkf{ width: 600px,.....}
 ...
 
 
+Common Chunks Plugin
+현재 까지의 번들링 결과물은 단 하나의 js 파일
+- 하지만 이 내부에는 변경될 일이 없는 react, react-dom 등의 라이브러리가 있음
+- 변경되지 않는 부분을 분리 해서 별도의 파일로 생성 한다면 (캐시 기능 활용, 로딩 속도 개선)
+- 여러개의 파일로 쪼개 져서 생성된다
+index.html
+main-jsdfsdklj.css
+main-djflsdj.js
+- CRA2.x 에서는 기본 내장 되어 있음
+Webpack 4.0부터는 SplitChunks Plugin을 사용함s
+
+entry: {
+    main: __dirname + 'src/main.js',
+    vendor: [
+        'react',
+        'react-dom'
+    ]
+}
+
+plugin: [
+....
+    new webpack.optimize.CommonsChunkPlugin({
+        name: 'vendor'
+    })
+]
