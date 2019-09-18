@@ -43,3 +43,15 @@ cross-env 은 윈도우즈와 리눅스 맥에서 환경 변수 설정이 다른
 외부 스크립트와 도구를 이용해 소스파일 css, html, image등에 대한 전처리, 변환 등의 작업을 적용할 수 있음
 로더 리스트 공식 site https://webpack.js.org/loaders
 
+특별히 loader를 모듈화를 할 수 있는데 왜 필요 하냐?
+- 여러 컴포넌트에서 같은 이름의 클래스명을 사용 했어도 로컬라이즈 한다
+- create-react-app에는 없는 기능으로 필요 한 경우에 eject 를 해야한다
+
+use: [
+    {loader: "style-loader"},
+    {loader: "css-loader",
+     options: {
+         module: true   // css 이름이 충될 될때 
+     }   
+    }
+]
