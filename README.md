@@ -62,3 +62,26 @@ plugin 이란?
 - loader vs plugin 
  loader(로딩 할때) 는 (js, css, image, html) 을 로딩할 때 동작
  plugin(번들링 할때) 은 빌드 프로세스 과정에서 동작
+
+
+ExtractTextPlugin
+A.js + B.js ==>  새로운 파일 하나로 만들고 링크 Tag로 만든다
+모든 css에 대한 require, import를 별도의 css출력 파일로 옮겨서 JS 에서 스타일을 인라인으로 추가할 필요가 없도록 해줌
+- css 텍스트 파일을 묶어서 번들링한 뒤 하나 또는 여러개의 css 파일을 생성함
+
+use: ExtractTextPlugIn.extract({
+
+})
+
+plugins: [
+    new ExtractTextPlugin("[name]-[hash].css")
+]
+
+style.css, style2.css (npm run build) 
+
+번들링 후 아래와 같은 파일로 생성 된다
+table._3shfkkkkf{ width: 600px,.....}
+table._fhidhfkkkkf{ width: 600px,.....}
+...
+
+
