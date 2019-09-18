@@ -60,5 +60,5 @@ plugin 이란?
 - webpack에서 사용가능한 추가 기능 제공
 - 빌드 프로세스 과정에 플로그인을 주입시켜 Custom 동작이 가능 하게 함
 - loader vs plugin 
- loader 는 (js, css, image, html) 을 로딩할 때 동작
- plugin은 빌드 프로세스 과정에서 동작
+ loader(로딩 할때) 는 (js, css, image, html) 을 로딩할 때 동작
+ plugin(번들링 할때) 은 빌드 프로세스 과정에서 동작
