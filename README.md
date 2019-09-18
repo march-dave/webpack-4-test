@@ -37,3 +37,9 @@ cross-env 은 윈도우즈와 리눅스 맥에서 환경 변수 설정이 다른
 
 --hot: HMR(Hot Module Replacement) 지원, 코드 수정 후 저장 하면 즉시 화면에 반영됨
 --open: webpack 개발 서버 구동 후 브라우저 자동 열림 
+
+
+로더(loader)란?
+외부 스크립트와 도구를 이용해 소스파일 css, html, image등에 대한 전처리, 변환 등의 작업을 적용할 수 있음
+로더 리스트 공식 site https://webpack.js.org/loaders
+
