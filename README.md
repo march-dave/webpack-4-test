@@ -114,3 +114,5 @@ plugin: [
 
 path.resolve(...) 는 상대 경로를 절대 경로로 변경해 준다.
 __dirname 는 현재 경로를 보여 준다 i.e) /TempTest/webpack-4-quickstart
+
+webpack 4 이상윤 webpack-cli 를 꼭 함께 설치 해야 한다.
