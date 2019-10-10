@@ -94,7 +94,7 @@ index.html
 main-jsdfsdklj.css
 main-djflsdj.js
 - CRA2.x 에서는 기본 내장 되어 있음
-Webpack 4.0부터는 SplitChunks Plugin을 사용함s
+Webpack 4.0부터는 SplitChunks Plugin을 사용함
 
 entry: {
     main: __dirname + 'src/main.js',
