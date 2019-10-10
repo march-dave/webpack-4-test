@@ -4,13 +4,11 @@ module.exports = {
     devtool: 'source-map',
     mode: 'development',
     entry: {
-        main: __dirname + '/src/main.js'
-    }, 
-    // output: { 
-    //     path: __dirname + '/public', 
-    //     filename: '[name]-[hash].js',
-    //     publicPath: '/',
-    // },
+        main: __dirname + '/src/main.js'}, 
+    output: { 
+        path: __dirname + '/public', 
+        filename: '[name]-[hash].js' 
+    },
 
     module: {
         rules: [
@@ -41,19 +39,18 @@ module.exports = {
 
     plugins : [
         new HtmlWebpackPlugin({
-            // title : '직원 정보 조회2', 
-            // template : __dirname + '/assets/index.html', 
-            template : __dirname + '/src/public/index.html', 
-            // filename : 'index.html'      
+            title : '직원 정보 조회2', 
+            template : __dirname + '/assets/index.html', 
+            filename : 'index.html'      
        }),
     //    new UglifyJsPlugin()
     ],
 
     devServer: {
-        // contentBase: "./111111public",
-        // inline: true,
+        contentBase: "./public",
+        inline: true,
         port: 3000,
-        // historyApiFallback: true
+        historyApiFallback: true
 
     }
  };
