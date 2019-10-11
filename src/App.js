@@ -21,7 +21,7 @@ class App extends Component {
                 <table className={style.list}>
                     <thead>
                         <tr>
-                            <th>번호1ssssss</th><th>이름</th><th>모바일</th><th>이메일</th>
+                            <th>번호</th><th>이름</th><th>모바일</th><th>이메일</th>
                         </tr>
                     </thead>
                     <tbody>

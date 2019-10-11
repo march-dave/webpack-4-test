@@ -46,7 +46,6 @@ module.exports = {
             template : __dirname + '/src/public/index.html', 
             // filename : 'index.html'      
        }),
-    //    new UglifyJsPlugin()
     ],
 
     devServer: {
