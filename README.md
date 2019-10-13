@@ -12,7 +12,7 @@
 heroku create app-react-mvp --buildpack https://github.com/mars/create-react-app-buildpack.git
 
 
-1. ___dirname은 현재 실행중인 스크립트가 포함된 디렉토리의 이름을 나타내는 node.js 의 전역 변수이다.
+1. ___dirname은 현재 실행중인 스크립트가 포함된 디렉토리의 이름을 나타내는 node.js 의 전역 변수이다. 현재 내가 사용중인 경로 /TempTest/webpack-4-quickstart 
 
 2. webpack 개발 서버 (webpack-dev-server) 란 
  - node.js + express로 구성되어 있어서 별도의 http 서비스를 작성하지 않아도 됨
