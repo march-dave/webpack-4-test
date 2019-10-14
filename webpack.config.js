@@ -1,5 +1,9 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
+console.log('__dirname', __dirname)
+// console.log('path', path)
+
 module.exports = { 
     devtool: 'source-map',
     mode: 'development',
