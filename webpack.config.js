@@ -7,6 +7,10 @@ console.log('__dirname', __dirname)
 //  webpack config 의 현재 경로를 보여 준다.
 console.log('dskfdjslk', path.resolve('../'))
 // /Users/ysangy/Code
+// 상대 경로를 보여준다. 현재에서 .. 를 찾는다면 
+// /Users/ysangy/Code/webpacktest 에서 /webpacktest 를 제거한 
+// /Users/ysangy/Code 가 되겠다.
+
 
 module.exports = { 
     devtool: 'source-map',
