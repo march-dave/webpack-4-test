@@ -1,8 +1,9 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 
 console.log('__dirname', __dirname)
-// console.log('path', path)
+console.log('dskfdjslk', path.resolve('../'))
 
 module.exports = { 
     devtool: 'source-map',
