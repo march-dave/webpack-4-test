@@ -4,6 +4,7 @@ const path = require('path');
 
 console.log('__dirname', __dirname)
 // /Users/ysangy/Code/webpacktest
+//  webpack config 의 현재 경로를 보여 준다.
 console.log('dskfdjslk', path.resolve('../'))
 // /Users/ysangy/Code
 
