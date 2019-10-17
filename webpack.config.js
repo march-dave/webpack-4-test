@@ -5,6 +5,7 @@ const path = require('path');
 console.log('__dirname', __dirname)
 // /Users/ysangy/Code/webpacktest
 //  webpack config 의 현재 경로를 보여 준다.
+// __dirname 은 node.js 가 갖고 있는 전역 변수 이다.
 console.log('dskfdjslk', path.resolve('../'))
 // /Users/ysangy/Code
 // 상대 경로를 보여준다. 현재에서 .. 를 찾는다면 
