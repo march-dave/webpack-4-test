@@ -93,7 +93,7 @@ Common Chunks Plugin (4.0 에서는 안쓴다.)
 index.html
 main-jsdfsdklj.css
 main-djflsdj.js
-- CRA2.x 에서는 기본 내장 되어 있음
+- CRA2.x 에서는 기본 내장 되어 있음 ( 최신 버전은 CRA3.x )
 Webpack 4.0부터는 SplitChunks Plugin을 사용함
 
 entry: {
